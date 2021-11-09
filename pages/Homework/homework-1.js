@@ -1,0 +1,1 @@
+"use strict";var o=prompt("Введите ваше имя"),p=prompt("Введите вашу фамилию"),r=+prompt("Введите ваш возраст");console.log({name:o,surname:p,age:r});

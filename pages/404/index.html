@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="../../static/fonts/gilroy.css"/>
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <title>Something went wrong</title>
+  </head>
+  <body>
+    <header class="header container">
+  <a href="/" class="header__logo">Home</a>
+  <nav>
+      <ul class="header__nav common-no-list">
+          <li class="header__item">
+            <a href="../../pages/blog/index.html" class="button button_link">My blog</a>
+          </li>
+          <li class="header__item signIn-js header-js">
+            <button type="button" class="button button_link button_sign-js" @@disabled>Sign in</button>
+          </li>
+          <li class="header__item register-js header-js">
+            <button type="button" class="button button_link button_register-js" @@disabled>Register</button>
+          </li>
+          <li class="header__item toProfile-js common-hidden header-js">
+            <a href="../../pages/profile/index.html" class="button button_link ">My profile</a>
+          </li>
+      </ul>
+  </nav>
+</header>
+
+    <main class="container">
+      <section class="error-404">
+    <h1 class="error-404__title">Something went wrong</h1>
+    <a href="/" class="button button_black error-404__link">Go back to the main page</a>
+    <img src="../../static/images/404.svg" alt="Something went wrong, Go back to the main page" width="512" height="226" class="error-404__img">
+</section>
+    </main>
+    <footer class="footer">
+  <h2 class="footer__title">Contacts</h2>
+  <p class="footer__description">Want to know more or just chat?You are welcome!</p>
+  <button type="button" class="button button_black button_send-js" @@disabled>Send message</button>
+  <ul class="footer__social common-no-list">
+    <li class="footer__item"><a href="https://www.instagram.com/" class="button" target="_blank" rel="nofollow">Instagram</a></li>
+    <li class="footer__item"><a href="https://vk.com/feed" class="button" target="_blank" rel="nofollow">Vk</a></li>
+    <li class="footer__item"><a href="https://web.telegram.org/" class="button" target="_blank" rel="nofollow">Telegram</a></li>
+    <li class="footer__item"><a href="mailto:zoopark86@yandex.ru" class="button" target="_blank" rel="nofollow">Mail</a></li>
+    <li class="footer__item"><a href="https://github.com/" class="button" target="_blank" rel="nofollow">GitHub</a></li>
+    <li class="footer__item"><a href="tel:+79608410621" class="button" target="_blank" rel="nofollow">Phone</a></li>
+  </ul>
+  <p class="footer__text">Design by <a href="https://dlacademy.ru/" class="footer__text footer__text_wrapper" target="_blank" rel="nofollow">DL Academy</a></p>
+  <p class="footer__text">Program code from Antonina</p>
+</footer>
+
+    <div class="overlay"></div>
+    <div class="popup popup_sign">
+    <h2 class="common-visually-hidden">Modal Window</h2>
+    <button class="popup_close popup_close_sign-js">
+      <svg width="26" height="26">
+        <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" fill="#828282"/>
+        <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" fill="#828282"/>
+      </svg>
+    </button>
+    <!-- action="https://echo.htmlacademy.ru" method="get" -->
+    <form class="form form_sign-js" name="signInForm">
+        <div class="form__fieldset">
+            <div class="form__column">
+                <label for="sign_email" class="form__label">Email<span class="form__required"> *</span></label>
+                <input id="sign_email" class="form__input" type="email" name="email">
+            </div>
+        </div>
+        <div class="form__fieldset">    
+            <div class="form__column">
+                <label for="sign_password" class="form__label">Password<span class="form__required"> *</span></label>   
+                <input id="sign_password" class="form__input" type="password" name="password">
+            </div>
+        </div>
+        <!-- <button type="submit" class="button button_form button-signIn-js">Log in</button> -->
+        <button type="submit" class="button button_form button-signIn-js" @@disabled>Log in</button>
+        <div class="preloader signIn-preloader-js">
+    <div id="floatingCirclesG">
+        <div class="f_circleG" id="frotateG_01"></div>
+        <div class="f_circleG" id="frotateG_02"></div>
+        <div class="f_circleG" id="frotateG_03"></div>
+        <div class="f_circleG" id="frotateG_04"></div>
+        <div class="f_circleG" id="frotateG_05"></div>
+        <div class="f_circleG" id="frotateG_06"></div>
+        <div class="f_circleG" id="frotateG_07"></div>
+        <div class="f_circleG" id="frotateG_08"></div>
+    </div>
+</div>
+    </form>
+</div>
+    <div class="popup popup_register">
+    <h2 class="common-visually-hidden">Modal Window</h2>
+    <button class="popup_close popup_close_register-js">
+      <svg width="26" height="26">
+        <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" fill="#828282"/>
+        <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" fill="#828282"/>
+      </svg>
+    </button>
+    <form name="registerForm" class="form form_register-js">
+        <div class="form__fieldset form__column_large">
+            <label for="register_email" class="form__label">Email<span class="form__required"> *</span></label>
+            <input id="register_email" class="form__input" type="email" name="email" required>
+        </div>
+        <div class="form__fieldset form__fieldset_two-column">
+            <div class="form__column">
+                <label for="register_name" class="form__label">Name<span class="form__required"> *</span></label>
+                <input id="register_name" class="form__input" type="text" name="name">
+            </div>
+            <div class="form__column">
+                <label for="register_surname" class="form__label">Surname<span class="form__required"> *</span></label>
+                <input id="register_surname" class="form__input" type="text" name="surname">
+            </div>
+        </div>
+        <div class="form__fieldset form__fieldset_two-column">
+            <div class="form__column">
+                <label for="register_password" class="form__label">Password<span class="form__required"> *</span></label>
+                <input id="register_password" class="form__input" type="password" name="password">
+            </div>
+            <div class="form__column">
+                <label for="register_repeat-password" class="form__label">Repeat password<span class="form__required"> *</span></label>
+                <input id="register_repeat-password" class="form__input" type="password" name="passwordRepeat">
+            </div>
+        </div>
+        <div class="form__fieldset form__fieldset_two-column">
+            <div class="form__column">
+                <label for="register_location" class="form__label">Location<span class="form__required"> *</span></label>
+                <input id="register_location" class="form__input" type="text" name="location">
+            </div>
+            <div class="form__column">
+                <label for="register_age" class="form__label">Age<span class="form__required"> *</span></label>
+                <input id="register_age" class="form__input" type="number" name="age">
+            </div>
+        </div>
+        <div class="form__fieldset">
+            <input id="check_input" type="checkbox" class="form__checkbox_input" name="required">
+            <label for="check_input" class="form__checkbox_label" tabindex="0">Clicking on the button, you consent to the processing of your personal data.</label>
+        </div>
+        <button type="submit" class="button button_form button-reg-js" disabled>Sign up</button>
+        <div class="preloader register-preloader-js">
+    <div id="floatingCirclesG">
+        <div class="f_circleG" id="frotateG_01"></div>
+        <div class="f_circleG" id="frotateG_02"></div>
+        <div class="f_circleG" id="frotateG_03"></div>
+        <div class="f_circleG" id="frotateG_04"></div>
+        <div class="f_circleG" id="frotateG_05"></div>
+        <div class="f_circleG" id="frotateG_06"></div>
+        <div class="f_circleG" id="frotateG_07"></div>
+        <div class="f_circleG" id="frotateG_08"></div>
+    </div>
+</div>
+    </form>
+</div>
+    <script src="scripts.js"></script>
+  </body>
+  
+</html>
